@@ -139,7 +139,17 @@ function breakStatement(numero) {
   // devolver: "Se interrumpió la ejecución"
   // Pista: usá el statement 'break'
   // Tu código:
-  for ( var i=0;)
+  var resultados=[];
+  for ( var i=0;i<10;i++){
+    if (numero=== i) break;
+    numero= numero + 2;
+    resultados.push(numero);
+  }
+if (i<0)
+  return 'Se interrumpio la ejecucion';
+  return resultados;
+
+
 
 }
 
@@ -151,6 +161,12 @@ function continueStatement(numero) {
   // y se continua con la siguiente iteración
   // Pista: usá el statement 'continue'
   // Tu código:
+ var resultados=[];
+ for (var i=0; i<10;i++) {
+  numero=numero + 2;
+  if (i===5) continue;
+  resultados.push(numero);}
+  return resultados;
   
 }
 
